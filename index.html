@@ -2,8 +2,69 @@
 <html>
 <head>
   <title>Jessica Wass</title>
+  	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  	<link rel="stylesheet" href="./index.css" type="text/css">
+  	<!-- Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+	<script src="index.js"></script>
+
 </head>
 
 <body>
-	<h1>Hello world!</h1>
+	<section class="introduction">
+		<div class="container clearfix">
+			<header>
+				<h1> Hello, my name is <b>Jess Wass</b>.</h1>
+				<p> Adventurer, curious learner, voracious reader. </p>
+			</header>
+		</div>
+	</section>
+
+	<section class="project github">
+		<div class="container clearfix">
+			<div class="project_description">
+				<h2>
+					<a href="http://github.com/jlwass">Github</a>
+				</h2>
+
+				<p>Here are some of the projects I've been working on lately (including this site). </p>    
+            	
+            	<ul id="repo-list"></ul>
+            	<script>displayUserRepo()</script>
+            </div>
+        </div>
+    </section>
+
+    <section class="work_together">
+    	<div class="container">
+    		<h2>Let's Work Together</h2>
+    		<p> I'm currently a soon-to-graduate software engineer looking for opportunities. Drop me a line if you're interested!</p>
+    		<a href="mailto:wass.jessica@gmail.com" class="email_link">wass.jessica@gmail.com</a>
+    	</div>
+    </section>
+
+    <section class="project instagram">
+   <div class="container clearfix">
+    <h2> Recent Instagram Posts</h2>
+	<!-- <button onclick="displayPhotos()">Get insta</button> -->
+    <div id="instagram" class="row">
+	    <ul id="photo-list"></ul>
+	    <script>displayPhotos();</script>
+	</div>
+	</div>
+	</section>
 </body>
+
+<!-- https://api.instagram.com/v1/users/983750504/media/recent/?client_id=96595184ea8548c8b33f3ea59c7edcda -->
+
