@@ -36,9 +36,10 @@ var displayUserRepo = function(handle){
             console.log(errorThrown);
         },
         success: function(data){
+            console.log(data);
             for(var i = 0; i < data.length; i++){
                 var repo = data[i];
-                $("#repo-list").append($("<li><a href='" + repo.url + "'>" + repo.name + "</a></li>"));
+                $("#repo-list").append($("<li><a href='" + repo.html_url + "'>" + repo.name + "</a></li>"));
             }
         }
     })

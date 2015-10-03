@@ -16,27 +16,8 @@ ul {
     padding-left: 1.2em;
 }
 
-.centered {
-	margin-left: auto;
-	margin-right: auto;
-}
+/* http://vinthomas.com/ */
 
-#helloWrld {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
 	margin:0;
 	padding:0;
@@ -48,27 +29,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 	display:block
-}
-
-body{
-	line-height:1
-}
-
-ol,ul{
-	list-style:none
-}
-
-blockquote,q{
-	quotes:none
-}
-
-blockquote:before,blockquote:after,q:before,q:after{
-	content:'';content:none
-}
-
-table{
-	border-collapse:collapse;
-	border-spacing:0
 }
 
 body{
@@ -155,56 +115,6 @@ textarea{resize:none}
 
 .icon-link:before{content:"\e2cf"}
 
-.font-size-12{font-size:12px}
-
-.font-size-14{font-size:14px}
-
-.font-size-16{font-size:16px}
-
-.font-size-18{font-size:18px}
-
-.font-size-20{font-size:20px}
-
-.font-size-24{font-size:24px}
-
-.font-size-28{font-size:28px}
-
-.font-size-30{font-size:30px}
-
-.font-size-36{font-size:36px}
-
-.font-size-42{font-size:42px}
-
-.font-size-48{font-size:48px}
-
-.font-size-54{font-size:54px}
-
-.font-size-60{font-size:60px}
-
-.line-height-14{line-height:14px}
-
-.line-height-16{line-height:16px}
-
-.line-height-18{line-height:18px}
-
-.line-height-20{line-height:20px}
-
-.line-height-24{line-height:24px}
-
-.line-height-28{line-height:28px}
-
-.line-height-30{line-height:30px}
-
-.line-height-36{line-height:36px}
-
-.line-height-42{line-height:42px}
-
-.font-weight-light{font-weight:200}
-
-.font-weight-medium{font-weight:400}
-
-.font-weight-heavy{font-weight:600}
-
 .text-left{text-align:left}
 
 .text-center{text-align:center}
@@ -219,7 +129,7 @@ body{background:#fff;font-family:'Proxima Nova Soft',proxima-nova-soft,Helvetica
 
 .container{max-width:1030px;padding:0 30px;margin:0 auto}
 
-.introduction{padding:90px 0 120px;text-align:center;background:#70DBDB no-repeat top center;background-size:cover}
+.introduction{padding:90px 0 120px;text-align:center;background:#33CCCC no-repeat top center;background-size:cover}
 
 .introduction h1{font-size:48px;color:#fff;font-weight:200;line-height:48px;margin-bottom:18px}
 
@@ -241,24 +151,6 @@ body{background:#fff;font-family:'Proxima Nova Soft',proxima-nova-soft,Helvetica
 @media screen and (max-width:390px){
 	.introduction h1{font-size:30px}
 	.introduction p{font-size:18px}}
-
-.instagram_scroller{width:100%;height:210px;position:relative;margin-top:70px}
-
-.instagram_scroller .simply-scroll-clip{width:100%;height:210px;position:relative;overflow:hidden}
-
-#instagram_spinner{display:block;margin:0 auto;width:30px;height:30px;position:relative;top:146px}
-
-@media screen and (max-width:420px){#instagram_spinner{top:100px}}
-
-#instagram_list{height:280px;overflow:hidden;white-space:nowrap;text-align:left;position:relative}
-
-#instagram_list a{margin-right:30px;vertical-align:top;display:block;width:170px;height:210px;float:left}
-
-#instagram_list a:hover img{box-shadow:0 0 20px rgba(0,0,0,.4);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1)}
-
-#instagram_list img{width:170px;height:170px;display:block;margin-top:20px;border-radius:4px;-webkit-transition:all 220ms ease-in-out;-moz-transition:all 220ms ease-in-out;-o-transition:all 220ms ease-in-out;transition:all 220ms ease-in-out}
-
-@media screen and (max-width:420px){.instagram_scroller{height:170px;margin-top:40px}.instagram_scroller .simply-scroll-clip{height:170px}#instagram_list{height:210px}#instagram_list a{width:130px;height:170px}#instagram_list img{width:130px;height:130px}}
 
 .project{font-size:18px;line-height:24px;color:#6b696e;font-weight:200}
 
@@ -282,7 +174,17 @@ body{background:#fff;font-family:'Proxima Nova Soft',proxima-nova-soft,Helvetica
 
 .project.instagram .project_description{float:right;padding-top:48px}
 
-.project.instagram h2 a:hover{color:rgba(255,255,255,.6)}
+.project.instagram:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.project.instagram.image:hover:after{opacity:1;}
 
 .project.instagram .visit_link:hover{border-bottom:1px solid rgba(255,255,255,.4)}
 
